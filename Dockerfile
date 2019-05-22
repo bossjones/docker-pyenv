@@ -51,4 +51,8 @@ COPY bin/startup.sh .
 RUN "./startup.sh"
 
 RUN mkdir /var/task
+# WORKDIR /var/task
 
+RUN pip install -U pip setuptools --no-cache-dir && \
+  pip install -U virtualenv pipenv --no-cache-dir && \
+  pip install -U virtualenvwrapper --no-cache-dir
