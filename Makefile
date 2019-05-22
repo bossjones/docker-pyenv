@@ -1,5 +1,5 @@
 container_name := docker-pyenv
-artifactory_url := index.docker.io
+artifactory_url := index.docker.io/bossjones
 
 GIT_BRANCH  = $(shell git rev-parse --abbrev-ref HEAD)
 GIT_SHA     = $(shell git rev-parse HEAD)
